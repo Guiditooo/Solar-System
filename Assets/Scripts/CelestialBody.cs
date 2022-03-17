@@ -36,7 +36,6 @@ public class CelestialBody : MonoBehaviour
         transform.RotateAround(referencePoint.transform.position, Vector3.up, traslationSpeed * Time.deltaTime);
     }
 
-
     void Update()
     {
         Rotation();

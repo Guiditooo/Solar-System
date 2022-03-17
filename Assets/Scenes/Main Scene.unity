@@ -170,8 +170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diameter: 1
   rotationSpeed: 50
-  traslationSpeed: 0
-  referencePoint: {fileID: 1575326426}
+  traslationSpeed: 10
+  referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 1
 --- !u!23 &289087049
 MeshRenderer:
@@ -307,8 +307,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diameter: 0.53
   rotationSpeed: 48
-  traslationSpeed: 0
-  referencePoint: {fileID: 1575326426}
+  traslationSpeed: 5.31
+  referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 1.52
 --- !u!23 &592888648
 MeshRenderer:
@@ -406,8 +406,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diameter: 3.81
   rotationSpeed: 75
-  traslationSpeed: 0
-  referencePoint: {fileID: 1575326426}
+  traslationSpeed: 0.06
+  referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 30.06
 --- !u!23 &731602510
 MeshRenderer:
@@ -538,8 +538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diameter: 0.949
   rotationSpeed: 0.2
-  traslationSpeed: 0
-  referencePoint: {fileID: 1575326426}
+  traslationSpeed: 16.39
+  referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 0.72
 --- !u!23 &789621295
 MeshRenderer:
@@ -852,8 +852,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diameter: 11.2
   rotationSpeed: 120
-  traslationSpeed: 0
-  referencePoint: {fileID: 1575326426}
+  traslationSpeed: 0.84
+  referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 5.2
 --- !u!23 &1149160127
 MeshRenderer:
@@ -951,8 +951,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diameter: 0.382
   rotationSpeed: 0.85
-  traslationSpeed: 0
-  referencePoint: {fileID: 1575326426}
+  traslationSpeed: 41.6
+  referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 0.39
 --- !u!23 &1268006922
 MeshRenderer:
@@ -1050,8 +1050,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diameter: 9.41
   rotationSpeed: 109
-  traslationSpeed: 0
-  referencePoint: {fileID: 1575326426}
+  traslationSpeed: 0.34
+  referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 9.54
 --- !u!23 &1276982295
 MeshRenderer:
@@ -1213,7 +1213,7 @@ GameObject:
   - component: {fileID: 1575326429}
   - component: {fileID: 1575326428}
   - component: {fileID: 1575326427}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1250,7 +1250,7 @@ MonoBehaviour:
   diameter: 109
   rotationSpeed: 1.785
   traslationSpeed: 0
-  referencePoint: {fileID: 1575326426}
+  referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 0
 --- !u!23 &1575326428
 MeshRenderer:
@@ -1348,8 +1348,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diameter: 3.98
   rotationSpeed: 70
-  traslationSpeed: 0
-  referencePoint: {fileID: 1575326426}
+  traslationSpeed: 0.12
+  referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 19.19
 --- !u!23 &1808665635
 MeshRenderer:
@@ -1410,7 +1410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1858863889}
   - component: {fileID: 1858863890}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1443,7 +1443,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.6745098, b: 0.43867922, a: 1}
-  m_Intensity: 1
+  m_Intensity: 3
   m_Range: 1000
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
