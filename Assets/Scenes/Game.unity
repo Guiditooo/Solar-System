@@ -217,6 +217,9 @@ GameObject:
   - component: {fileID: 289087049}
   - component: {fileID: 289087048}
   - component: {fileID: 289087051}
+  - component: {fileID: 289087053}
+  - component: {fileID: 289087052}
+  - component: {fileID: 289087054}
   m_Layer: 0
   m_Name: Earth
   m_TagString: Untagged
@@ -251,8 +254,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 1
-  rotationSpeed: 50
-  traslationSpeed: 10
   referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 1
 --- !u!23 &289087049
@@ -402,6 +403,48 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &289087052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289087046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d9b7bd5c83df84fba196216728aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traslationSpeed: 10
+  referencePoint: {fileID: 1575326425}
+--- !u!114 &289087053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289087046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82139166cac9d7f4b8922963060232f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 50
+--- !u!114 &289087054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289087046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bddf01ff3cc178489e66c332fa738d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailColor:
+    serializedVersion: 2
+    rgba: 4294912666
 --- !u!1 &328337573
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +496,9 @@ GameObject:
   - component: {fileID: 592888648}
   - component: {fileID: 592888647}
   - component: {fileID: 592888650}
+  - component: {fileID: 592888652}
+  - component: {fileID: 592888651}
+  - component: {fileID: 592888653}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -487,8 +533,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 0.53
-  rotationSpeed: 48
-  traslationSpeed: 5.31
   referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 1.52
 --- !u!23 &592888648
@@ -638,6 +682,48 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &592888651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592888645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d9b7bd5c83df84fba196216728aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traslationSpeed: 5.31
+  referencePoint: {fileID: 1575326425}
+--- !u!114 &592888652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592888645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82139166cac9d7f4b8922963060232f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 48
+--- !u!114 &592888653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592888645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bddf01ff3cc178489e66c332fa738d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailColor:
+    serializedVersion: 2
+    rgba: 4278200831
 --- !u!1 &731602507
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,6 +737,9 @@ GameObject:
   - component: {fileID: 731602510}
   - component: {fileID: 731602509}
   - component: {fileID: 731602512}
+  - component: {fileID: 731602514}
+  - component: {fileID: 731602513}
+  - component: {fileID: 731602515}
   m_Layer: 0
   m_Name: Neptune
   m_TagString: Untagged
@@ -685,8 +774,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 3.81
-  rotationSpeed: 75
-  traslationSpeed: 0.06
   referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 30.06
 --- !u!23 &731602510
@@ -836,6 +923,48 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &731602513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731602507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d9b7bd5c83df84fba196216728aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traslationSpeed: 0.06
+  referencePoint: {fileID: 1575326425}
+--- !u!114 &731602514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731602507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82139166cac9d7f4b8922963060232f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 75
+--- !u!114 &731602515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731602507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bddf01ff3cc178489e66c332fa738d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailColor:
+    serializedVersion: 2
+    rgba: 4294937147
 --- !u!1 &773877939
 GameObject:
   m_ObjectHideFlags: 0
@@ -882,6 +1011,9 @@ GameObject:
   - component: {fileID: 789621295}
   - component: {fileID: 789621294}
   - component: {fileID: 789621297}
+  - component: {fileID: 789621299}
+  - component: {fileID: 789621298}
+  - component: {fileID: 789621300}
   m_Layer: 0
   m_Name: Venus
   m_TagString: Untagged
@@ -916,8 +1048,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 0.949
-  rotationSpeed: 0.2
-  traslationSpeed: 16.39
   referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 0.72
 --- !u!23 &789621295
@@ -1067,6 +1197,48 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &789621298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789621292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d9b7bd5c83df84fba196216728aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traslationSpeed: 16.39
+  referencePoint: {fileID: 1575326425}
+--- !u!114 &789621299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789621292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82139166cac9d7f4b8922963060232f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0.2
+--- !u!114 &789621300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789621292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bddf01ff3cc178489e66c332fa738d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailColor:
+    serializedVersion: 2
+    rgba: 4282608028
 --- !u!1 &841299372
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,8 +1285,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 0
-  rotationSpeed: 0
-  traslationSpeed: 0
   referencePoint: {fileID: 0}
   distanceFromReferencePoint: 0
 --- !u!23 &841299375
@@ -1295,6 +1465,9 @@ GameObject:
   - component: {fileID: 1149160127}
   - component: {fileID: 1149160126}
   - component: {fileID: 1149160129}
+  - component: {fileID: 1149160131}
+  - component: {fileID: 1149160130}
+  - component: {fileID: 1149160132}
   m_Layer: 0
   m_Name: Jupiter
   m_TagString: Untagged
@@ -1329,8 +1502,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 11.2
-  rotationSpeed: 120
-  traslationSpeed: 0.84
   referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 5.2
 --- !u!23 &1149160127
@@ -1480,6 +1651,48 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &1149160130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149160124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d9b7bd5c83df84fba196216728aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traslationSpeed: 0.84
+  referencePoint: {fileID: 1575326425}
+--- !u!114 &1149160131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149160124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82139166cac9d7f4b8922963060232f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 120
+--- !u!114 &1149160132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149160124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bddf01ff3cc178489e66c332fa738d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailColor:
+    serializedVersion: 2
+    rgba: 4278255612
 --- !u!1 &1268006919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1706,9 @@ GameObject:
   - component: {fileID: 1268006922}
   - component: {fileID: 1268006921}
   - component: {fileID: 1268006924}
+  - component: {fileID: 1268006926}
+  - component: {fileID: 1268006925}
+  - component: {fileID: 1268006927}
   m_Layer: 0
   m_Name: Mercury
   m_TagString: Untagged
@@ -1527,8 +1743,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 0.382
-  rotationSpeed: 0.85
-  traslationSpeed: 41.6
   referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 0.39
 --- !u!23 &1268006922
@@ -1678,6 +1892,48 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &1268006925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268006919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d9b7bd5c83df84fba196216728aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traslationSpeed: 41.6
+  referencePoint: {fileID: 1575326425}
+--- !u!114 &1268006926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268006919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82139166cac9d7f4b8922963060232f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 0.85
+--- !u!114 &1268006927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268006919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bddf01ff3cc178489e66c332fa738d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailColor:
+    serializedVersion: 2
+    rgba: 4286053887
 --- !u!1 &1276982292
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,6 +1947,9 @@ GameObject:
   - component: {fileID: 1276982295}
   - component: {fileID: 1276982294}
   - component: {fileID: 1276982297}
+  - component: {fileID: 1276982299}
+  - component: {fileID: 1276982298}
+  - component: {fileID: 1276982300}
   m_Layer: 0
   m_Name: Saturn
   m_TagString: Untagged
@@ -1725,8 +1984,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 9.41
-  rotationSpeed: 109
-  traslationSpeed: 0.34
   referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 9.54
 --- !u!23 &1276982295
@@ -1876,6 +2133,48 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &1276982298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276982292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d9b7bd5c83df84fba196216728aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traslationSpeed: 0.34
+  referencePoint: {fileID: 1575326425}
+--- !u!114 &1276982299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276982292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82139166cac9d7f4b8922963060232f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 109
+--- !u!114 &1276982300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276982292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bddf01ff3cc178489e66c332fa738d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailColor:
+    serializedVersion: 2
+    rgba: 4278255373
 --- !u!1 &1502495884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1922,8 +2221,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 0
-  rotationSpeed: 0
-  traslationSpeed: 0
   referencePoint: {fileID: 0}
   distanceFromReferencePoint: 0
 --- !u!23 &1502495887
@@ -1987,6 +2284,7 @@ GameObject:
   - component: {fileID: 1575326429}
   - component: {fileID: 1575326428}
   - component: {fileID: 1575326427}
+  - component: {fileID: 1575326430}
   m_Layer: 6
   m_Name: Sun
   m_TagString: Untagged
@@ -2024,8 +2322,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 109
-  rotationSpeed: 1.785
-  traslationSpeed: 0
   referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 0
 --- !u!23 &1575326428
@@ -2077,6 +2373,68 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575326425}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!108 &1575326430
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575326425}
+  m_Enabled: 0
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.7764706, b: 0.2784314, a: 0.79607844}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 1
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1630687927
 GameObject:
   m_ObjectHideFlags: 0
@@ -2171,6 +2529,9 @@ GameObject:
   - component: {fileID: 1808665635}
   - component: {fileID: 1808665634}
   - component: {fileID: 1808665637}
+  - component: {fileID: 1808665639}
+  - component: {fileID: 1808665638}
+  - component: {fileID: 1808665640}
   m_Layer: 0
   m_Name: Uranus
   m_TagString: Untagged
@@ -2205,8 +2566,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 3.98
-  rotationSpeed: 70
-  traslationSpeed: 0.12
   referencePoint: {fileID: 1575326425}
   distanceFromReferencePoint: 19.19
 --- !u!23 &1808665635
@@ -2356,6 +2715,48 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 1
   m_Emitting: 1
+--- !u!114 &1808665638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808665632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82d9b7bd5c83df84fba196216728aa08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  traslationSpeed: 0.12
+  referencePoint: {fileID: 1575326425}
+--- !u!114 &1808665639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808665632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82139166cac9d7f4b8922963060232f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 70
+--- !u!114 &1808665640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808665632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bddf01ff3cc178489e66c332fa738d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailColor:
+    serializedVersion: 2
+    rgba: 4294959104
 --- !u!1 &1858863888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2539,8 +2940,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diameter: 0
-  rotationSpeed: 0
-  traslationSpeed: 0
   referencePoint: {fileID: 0}
   distanceFromReferencePoint: 0
 --- !u!23 &2050151296
