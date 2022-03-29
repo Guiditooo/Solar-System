@@ -30,7 +30,6 @@ public class CelestialBody : MonoBehaviour
 
     private void Rotation()
     {
-        Quaternion aux = transform.rotation;
         transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
     }
 

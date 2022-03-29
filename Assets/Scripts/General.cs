@@ -10,4 +10,12 @@ public class General : MonoBehaviour
         Game,
         End
     }
+
+    public enum ButtonEventColors
+    {
+        Idle,
+        Hovered,
+        Pressed,
+        Released
+    }
 }
