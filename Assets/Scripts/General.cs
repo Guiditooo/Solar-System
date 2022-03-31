@@ -10,7 +10,8 @@ public class General : MonoBehaviour
         Game,
         End
     }
-
+    private static int bodyNameCount = 9;
+    public static int GetBodyNameCount() => bodyNameCount;
     public enum BodyNames : int
     {
         Sun,

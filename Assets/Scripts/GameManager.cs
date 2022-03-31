@@ -33,6 +33,27 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            actualBody--;
+            if((int)actualBody<0)
+            {
+                actualBody = (General.BodyNames)General.GetBodyNameCount()-1;
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            actualBody++;
+            if((int)actualBody>=General.GetBodyNameCount())
+            {
+                actualBody = 0;
+            }
+        }else if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         if (actualBody == General.BodyNames.Sun)
         {
             Camera.main.transform.position = defaultCameraPos;
