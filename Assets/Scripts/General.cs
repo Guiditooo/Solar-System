@@ -11,6 +11,19 @@ public class General : MonoBehaviour
         End
     }
 
+    public enum BodyNames : int
+    {
+        Sun,
+        Mercury,
+        Venus,
+        Earth,
+        Mars,
+        Jupiter,
+        Saturn,
+        Uranus,
+        Neptune
+    }
+
     public enum ButtonEventColors
     {
         Idle,
