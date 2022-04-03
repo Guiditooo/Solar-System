@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
 
-        if(Input.GetKeyDown(KeyCode.LeftArrow))
+        if(Input.GetKeyDown(KeyCode.LeftArrow)|| Input.GetKeyDown(KeyCode.A))
         {
             actualBody--;
             if((int)actualBody<0)
@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
                 actualBody = (General.BodyNames)General.GetBodyNameCount()-1;
             }
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.RightArrow)|| Input.GetKeyDown(KeyCode.D))
         {
             actualBody++;
             if((int)actualBody>=General.GetBodyNameCount())
@@ -51,9 +51,13 @@ public class GameManager : MonoBehaviour
             }
         }else if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            SceneManager.LoadScene((int)General.SceneName.MainMenu);
         }
 
+    }
+
+    void LateUpdate()
+    {
         if (actualBody == General.BodyNames.Sun)
         {
             Camera.main.transform.position = defaultCameraPos;
@@ -65,14 +69,9 @@ public class GameManager : MonoBehaviour
         ChangeTrailWidth(false);
         Camera.main.transform.rotation = Quaternion.identity;
         Vector3 auxPos = bodies[((int)actualBody)].transform.position;
-        auxPos.z -= bodies[((int)actualBody)].transform.lossyScale.z*2;
+        auxPos.z -= bodies[((int)actualBody)].transform.lossyScale.z * 2;
         Camera.main.transform.position = auxPos;
-        //foreach (CelestialBody body in planetPositionList)
-        //{
-        //    Debug.Log("Posicion del planeta " + body.GetName() + ": " + body.transform.position);
-        //}
     }
-
     
 
     private void ChangeTrailWidth(bool isDefault)
